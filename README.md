@@ -17,8 +17,8 @@
 ## 🏗️ 기술 스택 (Tech Stack)
 | 구분 | 기술 스택 (Stack) | 설명 및 사용 목적 |
 | :-: | :-: | :-: |
-| Frontend | React / TypeScript, Tailwind CSS | 사용자 인터페이스 구현, 복잡한 상태 관리 |
-| Backend | Spring Boot, Java, RESTful API | 예약금 로직, 데이터베이스 연동 |
+| Frontend | React / TypeScript, Tailwind CSS | 사용자 인터페이스 구현, 복잡한 상태 관리, 라우팅 구조 설계, 레스토랑 목록 화면, 날짜/시간 선택 UI, 예약 생성 화면, 결제(MOCK) 화면, API 연동 |
+| Backend | Spring Boot, Java, RESTful API | 예약금 로직, 데이터베이스 연동, 예매 API, 결제(MOCK) API, session 로그인/회원가입 |
 | Database | PostgreSQL | 예약 정보, 사용자 정보 등 데이터 저장 |
 | Etc. | Git, GitHub | 버전 관리 및 협업 |
 
