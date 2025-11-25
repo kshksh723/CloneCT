@@ -1,12 +1,14 @@
-import React from 'react';
-import Layouts from './components/commons/Layouts';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layouts from "./components/commons/Layouts";
 
-const App: React.FC = () => {
+function App() {
   return (
-    <Layouts>
-     
-    </Layouts>
+    <Routes>
+      <Route path="/" element={<Layouts />} />
+
+    </Routes>
   );
-};
+}
 
 export default App;
