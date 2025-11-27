@@ -1,28 +1,20 @@
 import React, { useEffect, useState } from "react";
 
 type Banner = {
-  title: string;
-  description: string;
   gradient: string;
-  image: string; // 이미지 경로 추가
+  image: string;
 };
 
 const banners: Banner[] = [
   {
-    title: "오늘 어디서 먹을까요?",
-    description: "실시간 인기 맛집을 한 번에 보고, 자리까지 바로 예약하세요.",
     gradient: "bg-gradient-to-r from-rose-100 via-orange-100 to-amber-100",
     image: "/banners/banner1.jpg",
   },
   {
-    title: "지금 예약하면 딱 좋은 시간",
-    description: "대기 줄 대신 예약 한 번으로 여유 있게 식사하세요.",
     gradient: "bg-gradient-to-r from-red-100 via-rose-100 to-pink-100",
     image: "/banners/banner2.jpg",
   },
   {
-    title: "데이트 · 모임 · 혼밥까지",
-    description: "상황에 맞는 분위기 좋은 식당을 추천해 드립니다.",
     gradient: "bg-gradient-to-r from-slate-100 via-rose-100 to-red-100",
     image: "/banners/banner3.jpg",
   },
@@ -48,7 +40,6 @@ const BannerCarousel: React.FC = () => {
         <div className="hidden sm:block h-full w-64 md:w-100 lg:w-96 relative">
           <img
             src={banner.image}
-            alt={banner.title}
             className="h-full w-full object-cover"
           />
         </div>
@@ -77,7 +68,7 @@ export const Layouts: React.FC = () => {
       className="min-h-screen bg-[#f5f7fa] flex flex-col items-center pt-16"
     >
       {/* 검색 박스 */}
-      <div className="w-full max-w-3xl">
+      <div className="w-full max-w-3xl flex">
         <div className="flex items-center gap-4 rounded-full border border-[#fc4903] bg-white px-6 py-3 shadow-sm">
           <input
             className="flex-1 border-none outline-none text-base"
@@ -99,8 +90,15 @@ export const Layouts: React.FC = () => {
                 <line x1="16.5" y1="16.5" x2="21" y2="21" />
               </svg>
             </button>
+            
           </div>
+          
         </div>
+        <div className="flex">
+              <button>
+                dsf
+              </button>
+            </div>
       </div>
 
       {/* 메인 영역 */}
@@ -122,7 +120,7 @@ export const Layouts: React.FC = () => {
             <button className="w-full rounded-md bg-[#fc4903] py-2.5 text-sm font-semibold text-white">
               로그인
             </button>
-            <div className="flex justify-between text-[11px] text-gray-500  ">
+            <div className="flex justify-between text-[10px] text-gray-500  ">
               <button className="hover:underline">아이디 찾기</button>
               <button className="hover:underline">비밀번호 찾기</button>
               <button className="hover:underline">회원가입</button>
@@ -131,10 +129,10 @@ export const Layouts: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-8 w-full max-w-6xl">
+      <div className="mt-8 w-full max-w-4xl">
         
-        <div className="h-[400px] rounded-2xl bg-white shadow-sm">
-           
+        <div className="h-[295px] w- rounded-3xl bg-white shadow-sm">
+          
         </div>
         
       </div>
